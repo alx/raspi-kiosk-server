@@ -121,4 +121,4 @@ Reference tutorial to connect laravel to socket.io service : http://www.volkomen
 
 Here is a description of how the allocation of ip adresses are working.
 
-![Network diagram](../blob/master/manual/network.png?raw=true)
+[Network diagram](https://github.com/alx/raspi-kiosk-server/blob/master/manual/network.png)
