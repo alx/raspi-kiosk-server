@@ -86,6 +86,10 @@ Other raspberrypi client configured in kiosk mode (with the right url) should au
 
 ## Using PHP to connect different screens
 
+Mini-laravel app that use routes to serve different displays to clients.
+
 ## Using nodejs and socket.io to refresh screens from server
+
+http://www.volkomenjuist.nl/blog/2013/10/20/laravel-4-and-nodejsredis-pubsub-realtime-notifications/
 
 # Network setup
