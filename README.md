@@ -95,9 +95,27 @@ Mini-laravel app that use routes to serve different displays to clients.
 
 ## Refresh screens from server
 
-Use nodejs and socket.io
+Use nodejs and socket.io to notify clients that their display should be changed. This solution is lighter than an auto-refresh js script on client browser that will refresh the webpage from server every X seconds.
 
-http://www.volkomenjuist.nl/blog/2013/10/20/laravel-4-and-nodejsredis-pubsub-realtime-notifications/
+* Change ip adress in **nodejs/server.js** file with the raspberrypi ip adress
+* Install service that will start during the boot of the raspberrypi : 
+
+```
+sudo cp /var/www/raspi-kiosk-server/nodejs/node_debian_init.sh /etc/init.d/
+sudo update-rc.d node_debian_init.sh defaults
+```
+
+* Install nodejs dependencies :
+
+```
+sudo su www-data
+cd /var/www/raspi-kiosk-server/nodejs
+npm install express redis socket.io socket.io-client
+```
+
+* Reboot
+
+Reference tutorial to connect laravel to socket.io service : http://www.volkomenjuist.nl/blog/2013/10/20/laravel-4-and-nodejsredis-pubsub-realtime-notifications/
 
 # Network setup
 
