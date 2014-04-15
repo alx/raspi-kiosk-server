@@ -1,0 +1,5 @@
+# To place in /etc/xdg/lxsession/LXDE/autostart
+@xset s off
+@xset -dpms
+@xset s noblank
+@midori -e Fullscreen -a http://10.42.0.100
