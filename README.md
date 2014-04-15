@@ -76,6 +76,11 @@ sudo chmod 775 /var/www -R
 sudo chown www-data:www-data /var/www
 sudo su www-data
 git clone https://github.com/alx/raspi-kiosk-server.git
+```
+
+Exit from **www-data** user (or disconnect/reconnect from ssh), and use these commands :
+
+```
 sudo cp /var/www/raspi-kiosk-server/config/nginx_default.conf /etc/nginx/sites-enabled/default
 sudo /etc/init.d/nginx reload
 ```
@@ -93,3 +98,5 @@ Mini-laravel app that use routes to serve different displays to clients.
 http://www.volkomenjuist.nl/blog/2013/10/20/laravel-4-and-nodejsredis-pubsub-realtime-notifications/
 
 # Network setup
+
+Describe how the allocation of ip adresses is working.
